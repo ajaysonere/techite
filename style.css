@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-gray-100: hsl(220, 20%, 10%, 5%);
+  --color-gray-200: hsl(220, 20%, 10%, 10%);
+  --color-gray-300: hsl(220, 20%, 10%, 25%);
+  --color-gray-500: hsl(220, 20%, 10%, 50%);
+  --color-gray-700: #252542;
+  --color-gray-900: #0c0c22;
+
+  --color-bg: hwb(240 95% 0% / 0.89);
+  --transition: all 0.5s ease;
+
+  --container-width-lg: 84%;
+  --container-width-md: 92%;
+  --form-width: 50%;
+  --raduis-1: 0.3rem;
+  --radius-2: 0.6rem;
+  --radius-3: 1rem;
+  --radius-4: 2rem;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  line-height: 1.6;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--color-bg);
+  font-size: 0.9rem;
+}
+
+a {
+  color: var(--color-gray-700);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-gray-900);
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.9rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  line-height: 1.25;
+}
+
+h4 {
+  font-size: 1.1rem;
+}
+
+h5 {
+  line-height: 1.4rem;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+button {
+    padding: 0.8rem 5rem;
+    border-radius: 5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid black;
+}
+
+/*  =======================  Navbar ========================  */
+
+
+
+.parent-container {
+  width: 100%;
+  margin: auto;
+}
+
+.nav-container img {
+  height: 5rem;
+  padding-left: 8rem;
+  
+}
+
+.container{
+   width: 100%;
+   margin: auto;
+}
+
+.nav-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f0f0f0;
+  padding: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5rem;
+}
+
+.link {
+  margin-left: 3rem;
+  font-size: 1.2rem;
+}
+
+/* =================== Hero section ==================  */
+
+.hero-container {
+  width: 90%;
+  min-height: 84vh;
+  margin: auto;
+  display: flex;
+  padding-top: 8rem;
+}
+
+.hero-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero-left h1 {
+  margin-bottom: 2rem;
+}
+
+.hero-right {
+  width: 50%;
+  /* border: 1px solid purple; */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 2rem;
+}
+
+.hero-right img {
+  border-radius: 40%;
+}
+
+/*  =========== serice  ========================== */
+
+.service-container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+.service-para{
+  width: 60%;
+  margin: 1rem auto;
+}
+
+
+.card img {
+  width: 50px;
+  height: 50px;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 5rem;
+  padding: 1rem;
+}
+
+.card {
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  padding: 2rem;
+  box-shadow: 10rem 10rem 20rem rgba(0,0,0,0.1);
+  border-radius: 1rem;
+  border: 1px solid gray;
+}
+
+.card img {
+  margin-bottom: 2rem;
+}
+
+.card h2 {
+   font-size: 1.5rem;
+   margin-bottom: 0.5rem;
+}
+
+
+
+/* =================== Book Consultation ========================== */
+
+.consultation-parent-container {
+    width: 100%;
+    min-height: 30vh;
+    margin: auto;
+    background: #000;
+    color: #fff;
+}
+
+
+.consultation-container {
+   width: 90%;
+   margin: auto;
+   text-align: center;
+   padding: 5rem;
+}
+
+.consultation-container h2{
+    color: #fff;
+    margin-bottom: 1.2rem;
+}
+
+.consultation-container p{
+    margin-bottom: 1.2rem;
+}
+
+
+/* ========================== footer ======================  */
+
+footer{
+  width: 100%;
+  min-height: 40vh;
+  background: #000;
+  color: white;
+}
+
+
+.footer-container img{
+    width: 7rem;
+    display: flex;
+    align-self: flex-end;
+}
+
+.footer-container{
+   width: 90%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 1rem;
+}
+
+.footer-container span{
+   border-bottom: 1px solid white;
+}
+
+.footer-links a{
+   color: #fff;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-links ul{
+   display: flex;
+   align-items: center;
+}
+
+.footer-links ul li{
+   margin: 1rem 2rem 1rem 0rem;
+}
+
+.footer-container p{
+    margin-top: 2rem;
+}
+
+
+/* show icon */
+
+.nav__toggle-btn {
+    display: none;
+}
+
+/*  ================================ Media query ========================== */
+
+
+
+@media screen and (max-width:1440px) {
+     .cards{
+        padding: 0;
+        margin: 0;
+     }
+     
+    .service-container h2{
+       margin: 2rem 0rem;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .container{
+       width: 100%;
+    }
+    
+    .hero-container  {
+       width: 100%;
+       display: flex;
+       flex-direction: column-reverse;
+       align-items: center;
+    }
+    
+    .hero-right{
+       width: 60%;
+    }
+    
+    .hero-left {
+       width: 90%;
+       text-align: center;
+    }
+    
+    .nav-container img {
+       height: 4rem;
+    }
+    
+    .hero-left h1{
+      font-size: 1.5rem;
+    }
+    
+    .hero-right img{
+       width: 100%;
+    }
+    
+    .cards{
+      flex-wrap: wrap;
+    }
+    
+}
+
+
+@media screen and  (max-width: 768px) {
+     .nav-container img{
+         height: 5rem;
+         padding-left: 0;
+     }
+     
+    .nav__toggle-btn {
+      display: block;
+    }
+     
+    .nav-container{
+         
+     }
+     
+    .nav-links li a {
+        font-size: 1rem;
+     }
+     
+     .service-container{
+        width: 100%;
+     }
+     
+    .footer-container{
+       text-align: center; 
+     }
+     
+     .footer-links {
+        flex-direction: column;
+        text-align: center;
+     }
+     
+     .footer-links ul {
+        margin-top: 1rem;
+        text-align: center;
+     }
+     
+     .footer-links p {
+       text-align: center;
+     }
+}
+
+
+@media screen and (max-width: 700px) {
+    .nav-container{
+       padding: 0.2rem;
+    }
+    .nav-links{
+       margin:0;
+    }
+    .link{
+      margin-left:1.2rem;
+      font-size: 1rem;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+     .container{
+        width: 100%
+     }
+     
+     .nav__toggle-btn {
+        display: block;
+     }
+     
+     .nav-container img{
+        height: 5rem;
+        padding-left: 0;
+     }
+     
+     .parent-container {
+        width: 98%;
+     }
+     .hero-container {
+        width: 98%;
+     }
+     
+     .hero-left {
+        width: 100%;
+        margin-bottom: 2rem;
+     }
+     
+     .hero-right {
+        width: 100%;
+     }
+     
+     .cards{
+        width: 98%;
+        margin: 0;
+     }
+     
+     .footer-container img {
+        width: 5rem;
+        align-self: center;
+     }
+     
+     .consultation-container {
+        width: 100%;
+        padding: 2rem;
+     }
+}
+/* Make website responsive */
